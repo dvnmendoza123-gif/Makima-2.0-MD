@@ -1,98 +1,27 @@
 import { WAMessageStubType } from '@whiskeysockets/baileys'
 import fetch from 'node-fetch'
 
-const channelRD = {
-  id: "120363418804796632@newsletter", // Cambia por tu canal si quieres
-  name: "Kurayami Host"
-};
-
 export async function before(m, { conn, participants, groupMetadata }) {
-  if (
-    !m.messageStubType ||
-    !m.isGroup ||
-    !m.messageStubParameters?.[0] ||
-    !global.db.data.chats[m.chat]?.welcome
-  ) return !0
-
-  const jid = m.messageStubParameters[0]
-  const user = `@${jid.split('@')[0]}`
-  const thumbnailUrl = 'https://qu.ax/XRxEh.jpg'
-  const pp = await conn.profilePictureUrl(jid, 'image').catch(() => thumbnailUrl)
-  const img = await fetch(pp).then(r => r.buffer())
-  const total = [28, 32].includes(m.messageStubType)
-    ? participants.length - 1
-    : participants.length + 1
-
-  // Contexto newsletter/canal
-  const contextNewsletter = {
-    isForwarded: true,
-    forwardingScore: 999,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: channelRD.id,
-      newsletterName: channelRD.name,
-      serverMessageId: -1
-    },
-    externalAdReply: {
-      title: channelRD.name,
-      body: 'Deymoon Club',
-      thumbnailUrl: thumbnailUrl,
-      mediaType: 1,
-      renderLargerThumbnail: false,
-      sourceUrl: `https://whatsapp.com/channel/${channelRD.id.replace('@newsletter', '')}`
-    }
-  };
-
-  // Mensaje citado para bienvenida/despedida
-  const quotedMsg = (txt) => ({
-    key: { fromMe: false, participant: "0@s.whatsapp.net", remoteJid: m.chat, id: Math.random().toString(36).slice(2) },
-    message: { conversation: txt }
-  });
-
+  if (!m.messageStubType || !m.isGroup) return !0;
+  const fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net"}  
+  let pp = await conn.profilePictureUrl(m.messageStubParameters[0], 'image').catch(_ => 'https://raw.githubusercontent.com/The-King-Destroy/Adiciones/main/Contenido/1745522645448.jpeg')
+  let img = await (await fetch(`${pp}`)).buffer()
+  let chat = global.db.data.chats[m.chat]
+  let txt = '𝐃𝐞𝐲𝐦𝐨𝐨𝐧 𝐂𝐥𝐮𝐛 |  𝐂𝐡𝐚𝐭 𝐠𝐫𝐮𝐩𝐚𝐥 '
+  let txt1 = '𝐃𝐞𝐲𝐦𝐨𝐨𝐧 𝐂𝐥𝐮𝐛 | 𝐂𝐡𝐚𝐭 𝐠𝐫𝐮𝐩𝐚𝐥'
+  let groupSize = participants.length
   if (m.messageStubType == 27) {
-    const bienvenida = `
-💎 WELCOME - USER 💎
-
-🩵 Usuario: ${taguser}
-🩵 Grupo: ${groupMetadata.subject}
-🩵 Miembros: ${total}
-
-⌬ Usa *#help* para ver los comandos disponibles
-deymoon-club.vercel.app/
-`
-    // Mensaje de bienvenida como newsletter
-    await conn.sendMessage(m.chat, { 
-      image: img, 
-      caption: bienvenida, 
-      contextInfo: contextNewsletter 
-    });
-    // Mensaje adicional, respondiendo a 《✧》 LLEGO OTRO
-    await conn.sendMessage(m.chat, { 
-      text: 'SE NOS UNIÓ UN USUARIO', 
-      contextInfo: contextNewsletter
-    }, { quoted: quotedMsg('deymoon-club.vercel.app/') });
+    groupSize++;
+  } else if (m.messageStubType == 28 || m.messageStubType == 32) {
+    groupSize--;
   }
 
-  if ([28, 32].includes(m.messageStubType)) {
-    const despedida = `
-💎 ADIOS - USER 💎
-
-🩵 Usuario: ${taguser}
-🩵 Grupo: ${groupMetadata.subject}
-🩵 Miembros: ${total}
-
-⌬ Espero y vuelvas después.
-deymoon-club.vercel.app/
-`
-    // Mensaje de despedida como newsletter
-    await conn.sendMessage(m.chat, { 
-      image: img, 
-      caption: despedida, 
-      contextInfo: contextNewsletter 
-    });
-    // Segundo mensaje, respondiendo a 《✧》 SE FUE
-    await conn.sendMessage(m.chat, { 
-      text: 'SE NOS FUE EL USUARIO', 
-      contextInfo: contextNewsletter
-    }, { quoted: quotedMsg('deymoon-club.vercel.app/') });
+  if (chat.welcome && m.messageStubType == 27) {
+    let bienvenida = `𝐁𝐢𝐞𝐧𝐯𝐞𝐧𝐢𝐝𝐨 𝐚 ${groupMetadata.subject}\n\n✰ @${m.messageStubParameters[0].split`@`[0]}\nシ︎ 𝐃𝐢𝐬𝐟𝐫𝐮𝐭𝐚 𝐝𝐞 𝐭𝐮 𝐞𝐬𝐭𝐚𝐝𝐢𝐚 𝐚𝐪𝐮𝐢 𝐞𝐧 𝐞𝐥 𝐠𝐫𝐮𝐩𝐨\n> 𝐔𝐬𝐚 #help 𝐩𝐚𝐫𝐚 𝐯𝐞𝐫 𝐦𝐢 𝐥𝐢𝐬𝐭𝐚 𝐝𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬.\nhttps://deymoon-club.vercel.app/`    
+    await conn.sendMini(m.chat, txt, dev, bienvenida, img, img, redes, fkontak)
   }
-}
+
+  if (chat.welcome && (m.messageStubType == 28 || m.messageStubType == 32)) {
+    let bye = `𝐀𝐝𝐢𝐨𝐬 𝐃𝐞 ${groupMetadata.subject}\n\n✰ @${m.messageStubParameters[0].split`@`[0]}\n\nシ︎ 𝐀𝐡𝐨𝐫𝐚 𝐪𝐮𝐞𝐝𝐚𝐦𝐨𝐬 ${groupSize} 𝐌𝐢𝐞𝐦𝐛𝐫𝐨𝐬.\n> 𝐔𝐬𝐚 #help 𝐏𝐚𝐫𝐚 𝐯𝐞𝐫 𝐦𝐢 𝐥𝐢𝐬𝐭𝐚 𝐝𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬.\nhttps://deymoon-club.vercel.app/`
+    await conn.sendMini(m.chat, txt1, dev, bye, img, img, redes, fkontak)
+  }}
