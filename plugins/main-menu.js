@@ -98,9 +98,15 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
       const emojis = '🩵';
       const error = '❌';
 
-      let botname = global.botNames[conn.user.jid]; // Nombre del bot específico para esta sesión
-      let menu = `¡Hola! ${taguser} soy ${botname}  ${(conn.user.jid == global.conn.user.jid ? '(OficialBot)' : '(Sub-Bot)')} 
+      let botname = global.botNames[conn.user.jid];
+      
+      let botStatus = (conn.user.jid === global.conn.user.jid) ? '(OficialBot)' : '(Sub-Bot)';
+      if (conn.isBotPrem) {
+        botStatus += ' (Premium)';
+      }
 
+      let menu = `¡Hola! ${taguser} soy ${botname} ${botStatus}
+      
 ╭━━I N F O-B O-T━━
 ┃Creador: 𓆩‌۫᷼ ִֶָღܾ݉͢ғ꯭ᴇ꯭፝ℓɪ꯭ͨא𓆪
 ┃Tiempo activo: ${uptime}
