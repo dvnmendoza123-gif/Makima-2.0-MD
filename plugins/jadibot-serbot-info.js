@@ -1,4 +1,4 @@
-import { readdirSync, statSync, unlinkSync, readFileSync, watch, rmSync, promises as fsPromises } from "fs";
+import { readdirSync, statSync, unlinkSync, existsSync, readFileSync, watch, rmSync, promises as fsPromises } from "fs";
 const fs = { ...fsPromises, existsSync };
 import path, { join } from 'path';
 import ws from 'ws';
@@ -13,7 +13,7 @@ function loadSessions() {
 
 let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner }) => {
   const isDeleteSession = /^(deletesesion|deletebot|deletesession|deletesesaion)$/i.test(command);
-  const isPauseBot = /^(stop|pausarai|pausarbot)$/i.test(command);
+  //const isPauseBot = /^(stop|pausarai|pausarbot)$/i.test(command);
   const isShowBots = /^(bots|sockets|socket)$/i.test(command);
 
   const reportError = async (e) => {
@@ -56,7 +56,7 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
       break;
     }
 
-    case isPauseBot: {
+    /*case isPauseBot: {
       if (global.conn.user.jid == conn.user.jid) {
         conn.reply(m.chat, `🚫 No puedes pausar el bot principal.\n🛟 Si deseas ser un *Sub-Bot*, contacta con el número principal.`, m);
       } else {
@@ -64,7 +64,7 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
         conn.ws.close();
       }
       break;
-    }
+    }*/
 
     case isShowBots: {
       try {
@@ -131,9 +131,7 @@ ${detallesBots.trim()}
 handler.tags = ['serbot'];
 handler.help = ['sockets', 'deletesesion', 'pausarai'];
 handler.command = [
-  'deletesesion', 'deletebot', 'deletesession', 'deletesesaion',
-  'stop', 'pausarai', 'pausarbot',
-  'bots', 'sockets', 'socket'
+  'deletesesion', 'deletebot', 'deletesession', 'deletesesaion', 'bots', 'sockets', 'socket'
 ];
 
 export default handler;
