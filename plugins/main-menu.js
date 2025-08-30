@@ -624,7 +624,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
 
   } catch (e) {
     await m.reply(`✘ Ocurrió un error cuando la lista de comandos se iba a enviar.\n\n${e}`, m);
-    await m.react(error);
+    await m.react(e);
   }
 };
 
