@@ -17,7 +17,7 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
   const isShowBots = /^(bots|sockets|socket)$/i.test(command);
 
   const reportError = async (e) => {
-    await m.reply(`⚠️ Ocurrió un error inesperado, lo siento mucho...`, e);
+    await m.reply(`⚠️ Ocurrió un error inesperado, lo siento mucho...\n${e}`);
     console.error(e);
   };
 
