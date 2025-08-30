@@ -1,6 +1,7 @@
 import { readdirSync, statSync, unlinkSync, existsSync, readFileSync, watch, rmSync, promises as fsPromises } from "fs";
 import fs from 'fs';
-import path, { join } from 'path';
+import path from 'path';
+import { join } from 'path';
 import ws from 'ws';
 
 const tokensFilePath = './src/database/sessions.json';
@@ -13,11 +14,11 @@ function loadSessions() {
 
 let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner }) => {
   const isDeleteSession = /^(deletesesion|deletebot|deletesession|deletesesaion)$/i.test(command);
-  //const isPauseBot = /^(stop|pausarai|pausarbot)$/i.test(command);
+  const isPauseBot = /^(stop|pausarai|pausarbot)$/i.test(command);
   const isShowBots = /^(bots|sockets|socket)$/i.test(command);
 
   const reportError = async (e) => {
-    await m.reply(`⚠️ Ocurrió un error inesperado, lo siento mucho...\n${e}`);
+    await m.reply(`⚠️ Ocurrió un error inesperado, lo siento mucho...`);
     console.error(e);
   };
 
@@ -56,7 +57,7 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
       break;
     }
 
-    /*case isPauseBot: {
+    case isPauseBot: {
       if (global.conn.user.jid == conn.user.jid) {
         conn.reply(m.chat, `🚫 No puedes pausar el bot principal.\n🛟 Si deseas ser un *Sub-Bot*, contacta con el número principal.`, m);
       } else {
@@ -64,7 +65,7 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
         conn.ws.close();
       }
       break;
-    }*/
+    }
 
     case isShowBots: {
       try {
@@ -72,12 +73,12 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
         let premiumBots = [];
         let normalBots = [];
         let allBots = [];
-      
+        
         if (global.conns && Array.isArray(global.conns)) {
           for (const connBot of global.conns) {
             if (connBot.user && connBot.ws?.socket?.readyState !== ws.CLOSED) {
-              const botJid = connBot.user.jid;
-              const sessionData = sessions.find(s => s.numero === botJid.split('@')[0] && s.premium);
+              const botNumber = connBot.user.jid.split('@')[0];
+              const sessionData = sessions.find(s => s.numero === botNumber && s.premium);
               
               if (sessionData) {
                 premiumBots.push(connBot);
@@ -89,10 +90,10 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
         }
         
         allBots = [...premiumBots, ...normalBots];
-        const cantidadSubBots = allBots.length;
+        const totalSubBots = allBots.length;
 
         let detallesBots = '';
-        if (cantidadSubBots > 0) {
+        if (totalSubBots > 0) {
           detallesBots += `\n*ꕥ NÚMEROS DE BOTS CONECTADOS*\n\n`;
           let i = 1;
           for (const connBot of allBots) {
@@ -110,7 +111,7 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
 ❀ Principal » *1*
 ✿ Subs » *${normalBots.length}*
 ☆ Premiums » *${premiumBots.length}*
-❏ Total sessions » ${cantidadSubBots}/60
+❏ Total sessions » ${totalSubBots}/60
 
 ${detallesBots.trim()}
 
@@ -131,16 +132,18 @@ ${detallesBots.trim()}
 handler.tags = ['serbot'];
 handler.help = ['sockets', 'deletesesion', 'pausarai'];
 handler.command = [
-  'deletesesion', 'deletebot', 'deletesession', 'deletesesaion', 'bots', 'sockets', 'socket'
+  'deletesesion', 'deletebot', 'deletesession', 'deletesesaion',
+  'stop', 'pausarai', 'pausarbot',
+  'bots', 'sockets', 'socket'
 ];
 
 export default handler;
 
 function rTime(seconds) {
   seconds = Number(seconds);
-  var d = Math.floor(seconds / (3600 * 24));
-  var h = Math.floor((seconds % (3600 * 24)) / 3600);
-  var m = Math.floor((seconds % 3600) / 60);
+  var d = Math.floor(seconds / 3600 / 24);
+  var h = Math.floor(seconds % (3600 * 24) / 3600);
+  var m = Math.floor(seconds % 3600 / 60);
   var s = Math.floor(seconds % 60);
   var dDisplay = d > 0 ? d + (d == 1 ? " dia, " : " Dias, ") : "";
   var hDisplay = h > 0 ? h + (h == 1 ? " hora, " : " Horas, ") : "";
