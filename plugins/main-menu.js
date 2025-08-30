@@ -57,7 +57,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
       let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://files.catbox.moe/mqtxvp.jpg');
 
       // Mensaje de "CARGANDO COMANDOS..." con contexto de canal y respondiendo al mensaje
-      await conn.sendMessage(m.chat, {
+      /*await conn.sendMessage(m.chat, {
         text: 'ꪹ͜🕑͡ 𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗖𝗢𝗠𝗔𝗡𝗗𝗢𝗦...𓏲✧੭',
         contextInfo: {
           isForwarded: true,
@@ -76,7 +76,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
             renderLargerThumbnail: false,
           },
         }
-      }, { quoted: m });
+      }, { quoted: m });*/
 
       // Datos usuario y menú
       let { exp, chocolates, level, role } = global.db.data.users[m.sender];
