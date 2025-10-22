@@ -4,7 +4,7 @@
 
 ---
 
-> 🩵 Versión actual: 2.0.3
+> 🩵 Versión actual: 2.0.4
 
 <h1 align="center">SUPER WA - BOT</p>
 <p>
@@ -22,25 +22,10 @@ Este Bot es 100% funcional con super juegs RPG, sistema de gacha, administració
 ---
 
 - **LINKS IMPORTANTES**
-- **Canal oficial:** [Aquí](https://whatsapp.com/channel/0029Vb5nxWWFHWq5CNFP5b21)
-- **Grupo oficial:** [Aquí](https://chat.whatsapp.com/ETZduk7trjG9xgTXVCRHYK?mode=ac_t) 
+- **Canal oficial:** [Aquí](https://whatsapp.com/channel/0029VbBdQFMB4hdMMGAzAr37)
+- **Grupo oficial:** [Aquí](https://chat.whatsapp.com/KFZPNLb56dXLb3dQtCY8Ol?mode=wwt) 
 
 </details>
-
----
-
-## **`KURAYAMI HOSTING`**
-<a href="https://dash.kurayamihost.dpdns.org/home"><img src="https://qu.ax/PdMmk.jpg" height="100px"></a>
-</details>
-</details>
- <summary><b>:paperclip: Enlaces Importantes</b></summary>
-
-
-- **Dashboard:** [Aquí](https://dash.kurayamihost.dpdns.org/home)
-- **Panel de Servicios:** [Aquí](https://panel.kurayamihost.dpdns.org) 
-- **Grupo de soporte:** [entrar](https://chat.whatsapp.com/LBEePvs3HP6IfME1Ju8HE1?mode=ac_t)
-- **Contacto de soporte:** [Contactar](https://wa.me/18293142989) 
-- **Canal de actualizaciones:** [Aquí](https://whatsapp.com/channel/0029VbAa5sNCsU9Hlzsn651S)
 
 ---
 
@@ -91,7 +76,7 @@ Este Bot es 100% funcional con super juegs RPG, sistema de gacha, administració
 
 ## Si quieres contactar conmigo escríbeme:
 
-<a href="http://wa.me/18293142989" target="blank"><img src="https://img.shields.io/badge/Creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /> 
+<a href="http://wa.me/573136379995" target="blank"><img src="https://img.shields.io/badge/Creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /> 
 
-<a href="https://whatsapp.com/channel/0029Vb5nxWWFHWq5CNFP5b21" target="blank"><img src="https://img.shields.io/badge/Canal oficial-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://whatsapp.com/channel/0029VbBdQFMB4hdMMGAzAr37" target="blank"><img src="https://img.shields.io/badge/Canal oficial-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
