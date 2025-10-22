@@ -7,19 +7,11 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
-//*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
-
-//Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
-//Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos)
-global.botNumber = '' //Ejemplo: 527222519827
-
-//*──ׄ✰─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
+global.botNumber = '' 
 
 global.owner = [
-  ['14584886621', '🩵 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🩵', true],
-  ['18293142989', 'Número 2', true],
-  ['18290523631', 'Numero de antes', true],
-  ['17869238054']
+  ['573136379995', '☆ Propietario ☆', true],
+  ['18293142989', '🩵 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🩵', true]
 ]
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
@@ -50,15 +42,15 @@ global.makiJadibts = true
 
 global.packsticker = `⏤͟͞ू⃪  ̸̷͢Makima 𝐁𝐨𝐭𑁯ᰍ\n`
 global.packname = `⏤͟͞ू⃪  ̸̷͢Makima 𝐁𝐨𝐭𑁯ᰍ`
-global.author = `socket:\n✐ MakimaBot\n\nStickers Desarrollados en Deymoon Club`;
-global.wm = '⏤͟͞ू⃪  ̸̷͢𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 Deymoon Club';
-global.titulowm = '⏤͟͞ू⃪Makima 𝐁𖹭t͟𑁯ᰍ';
-global.igfg = 'Deymoon Club'
+global.author = `Stickers by Mendoza × Makima`;
+global.wm = '⏤͟͞ू⃪  ̸̷͢𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 Dairo mendoza';
+global.titulowm = '⏤͟͞ू⃪Makima 𝐁ot͟𑁯ᰍ';
+global.igfg = 'Mendoza'
 global.botname = 'Makima 𝐁𝐨𝐭 𝐌𝐃'
-global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Deymoon Club'
-global.textbot = 'Mak𝐢 : DEYMOON CLUB'
-global.gt = '͟͞𝐃𝐞𝐧𝐣𝐢';
-global.namechannel = 'Mak𝐢 𝐂𝐡a͟𝐧n͟e͟𝐥𑁯'
+global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Mendoza'
+global.textbot = 'Made With ❤️ by Mendoza'
+global.gt = '͟͞𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓭 𝓫𝔂 Mendoza ❤️';
+global.namechannel = 'Made With ❤️ by Mendoza'
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 
