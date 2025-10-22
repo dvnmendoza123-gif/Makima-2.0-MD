@@ -6,7 +6,7 @@ let handler = async (m, { conn, text }) => {
   }
 
   try {
-    const response = await axios.get(`https://ruby-core.vercel.app/api/ai/geminis?text=`);
+    const response = await axios.get(`https://ruby-core.vercel.app/api/ai/geminis`);
     const respuesta = response.data.response;
     conn.sendMessage(m.chat, { text: respuesta });
   } catch (error) {
