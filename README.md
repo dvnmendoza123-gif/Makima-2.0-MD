@@ -1,4 +1,4 @@
-> [!AVISO]
+> [!WARNING]
 > **AVISO IMPORTANTE**  
 > Makima va a ser adquirido por
 > otra persona. su desarrollo estará
