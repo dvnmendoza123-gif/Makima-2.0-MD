@@ -4,8 +4,8 @@ import { join } from 'path'
 let handler = async (m, { conn }) => {
   try {
     let taguser = '@' + m.sender.split('@')[0]
-    let nombreBot = '${botname}'
-    let bannerFinal = 'https://files.catbox.moe/cx0mbi.jpg'
+    let nombreBot = 'Makima'
+    let bannerFinal = 'https://qu.ax/XcJLh.jpg'
 
     const botActual = conn.user?.jid?.split('@')[0]?.replace(/\D/g, '')
     const configPath = join('./JadiBots', botActual || '', 'config.json')
