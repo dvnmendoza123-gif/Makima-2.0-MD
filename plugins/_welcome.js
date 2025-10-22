@@ -4,11 +4,11 @@ import fetch from 'node-fetch'
 export async function before(m, { conn, participants, groupMetadata }) {
   if (!m.messageStubType || !m.isGroup) return !0;
   const fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net"}  
-  let pp = await conn.profilePictureUrl(m.messageStubParameters[0], 'image').catch(_ => 'https://raw.githubusercontent.com/The-King-Destroy/Adiciones/main/Contenido/1745522645448.jpeg')
+  let pp = await conn.profilePictureUrl(m.messageStubParameters[0], 'image').catch(_ => 'https://qu.ax/XcJLh.jpg')
   let img = await (await fetch(`${pp}`)).buffer()
   let chat = global.db.data.chats[m.chat]
-  let txt = '𝐃𝐞𝐲𝐦𝐨𝐨𝐧 𝐂𝐥𝐮𝐛 |  𝐂𝐡𝐚𝐭 𝐠𝐫𝐮𝐩𝐚𝐥 '
-  let txt1 = '𝐃𝐞𝐲𝐦𝐨𝐨𝐧 𝐂𝐥𝐮𝐛 | 𝐂𝐡𝐚𝐭 𝐠𝐫𝐮𝐩𝐚𝐥'
+  let txt = 'Makima-Bot-MD'
+  let txt1 = 'Makima-Bot-MD'
   let groupSize = participants.length
   if (m.messageStubType == 27) {
     groupSize++;
