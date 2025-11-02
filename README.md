@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=F700FF&height=100&section=header&text=🩵%20Makima-Bot-MD%20🩵&fontSize=32&fontColor=ffffff" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=FF0000&height=100&section=header&text=🌹Daymon%20Tanjiro-Bot🌹&fontSize=32&fontColor=ffffff" />
 </p>
 
 ---
@@ -8,7 +8,7 @@
 
 <h1 align="center">SUPER WA - BOT</p>
 <p>
-        <img src= "https://files.catbox.moe/petcot.jpg">
+        <img src= "https://kirito.my/media/images/12222926_k.jpg">
     </p>
 
 </details>
