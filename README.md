@@ -4,7 +4,7 @@
 
 ---
 
-> 🩵 Versión actual: 2.0.4
+> 🌹 Versión actual: 2.0.4
 
 <h1 align="center">SUPER WA - BOT</p>
 <p>
