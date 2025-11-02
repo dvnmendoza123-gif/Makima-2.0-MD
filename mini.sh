@@ -104,7 +104,7 @@ clear
 echo -e "\e[36m
 ┏━━━━━━━━━⪩
 ┃˚₊ · ͟͟͞͞➳❥ 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐂𝐈𝐎́𝐍
-┃⏤͟͟͞͞ Makima-Bot-MD
+┃⏤͟͟͞͞ Daymon Tanjiro-Bot-MD
 ┗━━━━━━━━━⪩
 
 ✰ Mode by:
