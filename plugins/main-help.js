@@ -34,7 +34,7 @@ let handler = async (m, { conn, args }) => {
 
   const randomGif = gifVideos[Math.floor(Math.random() * gifVideos.length)];
 
-  let txt = `Hola ${name} Soy  *Makima* ${(conn.user.jid == global.conn.user.jid ? '(OficialBot)' : '(SubBot)')}
+  let txt = `Hola ${name} Soy  *Daymon Tanjiro* ${(conn.user.jid == global.conn.user.jid ? '(OficialBot)' : '(SubBot)')}
 
 ╭━━I N F O-B O T━━
 ┃Creador: 𓆩‌۫᷼ ִֶָღܾ݉͢ғ꯭ᴇ꯭፝ℓɪ꯭ͨא𓆪
