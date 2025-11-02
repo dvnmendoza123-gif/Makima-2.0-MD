@@ -11,13 +11,13 @@ global.botNumber = ''
 
 global.owner = [
   ['573136379995', '☆ Propietario ☆', true],
-  ['573235915041', '🩵 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🩵', true]
+  ['573235915041', '🌹 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌹', true]
 ]
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 
 global.owner_lid = [
-  [' 243349189566583', '🩵 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🩵 (LID)', true],
+  [' 243349189566583', '🌹 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌹 (LID)', true],
   ['149963665342644', 'Número 2 (LID)', true]
 ]
 
@@ -40,13 +40,13 @@ global.makiJadibts = true
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 
-global.packsticker = `⏤͟͞ू⃪  ̸̷͢Makima 𝐁𝐨𝐭𑁯ᰍ\n`
-global.packname = `⏤͟͞ू⃪  ̸̷͢Makima 𝐁𝐨𝐭𑁯ᰍ`
-global.author = `Stickers by Mendoza × Makima`;
+global.packsticker = `⏤͟͞ू⃪  ̸̷͢𝗗𝗮𝘆𝗺𝗼𝗻 𝗧𝗮𝗻𝗷𝗶𝗿𝗼-𝗕𝗼𝘁𑁯ᰍ\n`
+global.packname = `⏤͟͞ू⃪  ̸̷͢𝗗𝗮𝘆𝗺𝗼𝗻 𝗧𝗮𝗻𝗷𝗶𝗿𝗼-𝗕𝗼𝘁𑁯ᰍ`
+global.author = `Stickers by Mendoza × Daymon Tanjiro`;
 global.wm = '⏤͟͞ू⃪  ̸̷͢𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 Dairo mendoza';
-global.titulowm = '⏤͟͞ू⃪Makima 𝐁ot͟𑁯ᰍ';
+global.titulowm = '⏤͟͞ू⃪𝘿𝙖𝙮𝙢𝙤𝙣 𝙏𝙖𝙣𝙟𝙞𝙧𝙤-𝘽𝙤𝙩𑁯ᰍ';
 global.igfg = 'Mendoza'
-global.botname = 'Makima 𝐁𝐨𝐭 𝐌𝐃'
+global.botname = '𝙏𝙖𝙣𝙟𝙞𝙧𝙤 𝘽𝙤𝙩 𝙈𝘿'
 global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Mendoza'
 global.textbot = 'Made With ❤️ by Mendoza'
 global.gt = '͟͞𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓭 𝓫𝔂 Mendoza ❤️';
@@ -56,7 +56,7 @@ global.namechannel = 'Made With ❤️ by Mendoza'
 
 global.moneda = '¥'
 
-//• ↳ ◜𝑳𝑰𝑵𝑲𝑺  𝑫𝑬𝒀𝑴𝑶𝑶𝑵 𝑪𝑳𝑼𝑩◞ • 🩵
+//• ↳ ◜𝑳𝑰𝑵𝑲𝑺  𝑫𝑬𝒀𝑴𝑶𝑶𝑵 𝑪𝑳𝑼𝑩◞ • 🌹
 global.gp4 = 'https://chat.whatsapp.com/ETZduk7trjG9xgTXVCRHYK?mode=ac_t' //Grupo Oficial De Makima 
 global.gp1 = 'https://chat.whatsapp.com/ETZduk7trjG9xgTXVCRHYK?mode=ac_t' //Grupo 2
 global.gp2 = 'https://chat.whatsapp.com/ETZduk7trjG9xgTXVCRHYK?mode=ac_t'//
