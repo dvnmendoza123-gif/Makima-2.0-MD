@@ -56,14 +56,9 @@ global.namechannel = 'Made With ❤️ by Mendoza'
 
 global.moneda = '¥'
 
-//• ↳ ◜𝑳𝑰𝑵𝑲𝑺  𝑫𝑬𝒀𝑴𝑶𝑶𝑵 𝑪𝑳𝑼𝑩◞ • 🌹
-global.gp4 = 'https://chat.whatsapp.com/ETZduk7trjG9xgTXVCRHYK?mode=ac_t' //Grupo Oficial De Makima 
-global.gp1 = 'https://chat.whatsapp.com/ETZduk7trjG9xgTXVCRHYK?mode=ac_t'
-global.channel = 'https://whatsapp.com/channel/0029Vb7SzJj9MF8xpQqp8D24' //Canal test 
-global.yt = 'https://dash.kurayamihost.dpdns.org/home' //Canal De Youtube
-global.md = 'https://dash.kurayamihost.dpdns.org/home' //Github Oficial
-global.correo = 'https://dash.kurayamihost.dpdns.org/home'
-global.cn ='https://whatsapp.com/channel/0029VbAa5sNCsU9Hlzsn651S';
+//• ↳ ◜𝐋𝐈𝐍𝐊𝐒 𝐃𝐀𝐘𝐌𝐎𝐍 𝐓𝐀𝐍𝐉𝐈𝐑𝐎- 𝐁𝐎𝐓◞ • 🌹
+global.gp1 = 'https://chat.whatsapp.com/ETZduk7trjG9xgTXVCRHYK?mode=ac_t' //Grupo Oficial De Daymon Tanjiro
+global.channel = 'https://whatsapp.com/channel/0029Vb7SzJj9MF8xpQqp8D24' 
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 
