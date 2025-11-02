@@ -7,8 +7,8 @@ export async function before(m, { conn, participants, groupMetadata }) {
   let pp = await conn.profilePictureUrl(m.messageStubParameters[0], 'image').catch(_ => 'https://qu.ax/XcJLh.jpg')
   let img = await (await fetch(`${pp}`)).buffer()
   let chat = global.db.data.chats[m.chat]
-  let txt = 'Makima-Bot-MD'
-  let txt1 = 'Makima-Bot-MD'
+  let txt = 'Daymon Tanjiro-Bot'
+  let txt1 = 'Daymon Yanjiro-Bot'
   let groupSize = participants.length
   if (m.messageStubType == 27) {
     groupSize++;
@@ -17,7 +17,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
   }
 
   if (chat.welcome && m.messageStubType == 27) {
-    let bienvenida = `𝐁𝐢𝐞𝐧𝐯𝐞𝐧𝐢𝐝𝐨 𝐚 ${groupMetadata.subject}\n\n✰ @${m.messageStubParameters[0].split`@`[0]}\nシ︎ 𝐃𝐢𝐬𝐟𝐫𝐮𝐭𝐚 𝐝𝐞 𝐭𝐮 𝐞𝐬𝐭𝐚𝐝𝐢𝐚 𝐚𝐪𝐮𝐢 𝐞𝐧 𝐞𝐥 𝐠𝐫𝐮𝐩𝐨\n> 𝐔𝐬𝐚 #help 𝐩𝐚𝐫𝐚 𝐯𝐞𝐫 𝐦𝐢 𝐥𝐢𝐬𝐭𝐚 𝐝𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬.\nhttps://makima-bot-page.vercel.app/`    
+    let bienvenida = `𝐁𝐢𝐞𝐧𝐯𝐞𝐧𝐢𝐝𝐨 𝐚 ${groupMetadata.subject}\n\n✰ @${m.messageStubParameters[0].split`@`[0]}\nシ︎ 𝐃𝐢𝐬𝐟𝐫𝐮𝐭𝐚 𝐝𝐞 𝐭𝐮 𝐞𝐬𝐭𝐚𝐝𝐢𝐚 𝐚𝐪𝐮𝐢 𝐞𝐧 𝐞𝐥 𝐠𝐫𝐮𝐩𝐨\n> 𝐔𝐬𝐚 #help 𝐩𝐚𝐫𝐚 𝐯𝐞𝐫 𝐦𝐢 𝐥𝐢𝐬𝐭𝐚 𝐝𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬.\nhttps://Tanjiro-bot-page.vercel.app/`    
     await conn.sendMini(m.chat, txt, dev, bienvenida, img, img, redes, fkontak)
   }
 
