@@ -17,7 +17,7 @@
 
 ## Descripción
 
-Este Bot es 100% funcional con super juegs RPG, sistema de gacha, administración de grupos, ect...
+Este Bot es 100% funcional con super juegs RPG, sistema de gacha, administración de grupos, etc...
 
 ---
 
