@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
   try {
     let taguser = '@' + m.sender.split('@')[0]
     let nombreBot = '${botname}'
-    let bannerFinal = 'https://files.catbox.moe/cx0mbi.jpg'
+    let bannerFinal = 'https://kirito.my/media/images/12222926_k.jpg'
 
     const botActual = conn.user?.jid?.split('@')[0]?.replace(/\D/g, '')
     const configPath = join('./JadiBots', botActual || '', 'config.json')
