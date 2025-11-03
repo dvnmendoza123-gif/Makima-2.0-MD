@@ -1,4 +1,4 @@
-//código creado por Félix 
+//código creado por Mendoza 
 
 const handler = async (m, { conn, text }) => {
   // 🔐 Solo para el creador y owners definidos
@@ -28,7 +28,7 @@ const handler = async (m, { conn, text }) => {
 
   // 🎨 Mensaje Cyberpunk
   const message = `
-┏━━━《🩵 𝘚𝘠𝘚𝘛𝘌𝘔 𝘉𝘙𝘖𝘈𝘋𝘊𝘈𝘚𝘛 🩵》━━━┓
+┏━━━《🌹 𝘚𝘠𝘚𝘛𝘌𝘔 𝘉𝘙𝘖𝘈𝘋𝘊𝘈𝘚𝘛 🌹》━━━┓
 ┃ ⚙️ *Módulo IA Activado...*
 ┃
 ┃ 🔮 *MENSAJE DEL SISTEMA:*
@@ -55,7 +55,7 @@ const handler = async (m, { conn, text }) => {
     }
   }
 
-  return m.reply(`✅ *Difusión completada:*\n📡 *Grupos alcanzados:* ${totalGrupos}\n🧠 *Sistema:* IA MAKIMA BOT`);
+  return m.reply(`✅ *Difusión completada:*\n📡 *Grupos alcanzados:* ${totalGrupos}\n🧠 *Sistema:* IA DAYMON TANJIRO BOT`);
 };
 
 handler.help = ['bcgc2', 'bcg'];
