@@ -4,7 +4,7 @@ import { join } from 'path'
 let handler = async (m, { conn }) => {
   try {
     let taguser = '@' + m.sender.split('@')[0]
-    let nombreBot = '${botname}'
+    let nombreBot = '🌹𝗗𝗮𝘆𝗺𝗼𝗻 𝗧𝗮𝗻𝗷𝗶𝗿𝗼-𝗕𝗼𝘁🌹'
     let bannerFinal = 'https://kirito.my/media/images/12222926_k.jpg'
 
     const botActual = conn.user?.jid?.split('@')[0]?.replace(/\D/g, '')
@@ -22,14 +22,14 @@ let handler = async (m, { conn }) => {
     const tipo = conn.user?.jid === global.conn?.user?.jid ? '✿' : '(𝐒𝐮𝐛-𝐁𝐨𝐭)'
     const devby = '${nombreBot}, ${dev}'
 
-    let menu = '*¡𝐇𝐨𝐥𝐚! 𝐒𝐨𝐲 ${nombreBot}* *${tipo}*'
+    let menu = '*¡𝐇𝐨𝐥𝐚! 𝐒𝐨𝐲 🌹𝗗𝗮𝘆𝗺𝗼𝗻 𝗧𝗮𝗻𝗷𝗶𝗿𝗼-𝗕𝗼𝘁🌹* *${tipo}*'
 Aǫᴜɪ ᴛɪᴇɴᴇs ʟᴀ ʟɪsᴛᴀ ᴅᴇ ᴄᴏᴍᴀɴᴅᴏs: 
 ╭┈ ↷
 │ ✐ ${textbot}
 │ ✐ ꒷ꕤ🌹ദ ᴘᴀɢɪɴᴀ ᴡᴇʙ ෴
 │ https://makima-bot-page.vercel.app/
 │ ✐ ꒷ꕤ🌹ദ ᴄᴀɴᴀʟ ᴏғɪᴄɪᴀʟ ෴
-│ https://whatsapp.com/channel/0029VbBdQFMB4hdMMGAzAr37
+│ https://whatsapp.com/channel/0029Vb7SzJj9MF8xpQqp8D24
 ╰─────────────────
 
 
