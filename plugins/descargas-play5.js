@@ -18,7 +18,7 @@ Recursos:
 
 ✨ Xp : *+${isPrems ? exppremium : exp}*
 💎 Diamantes : *+${d}*
-🩵 MakiCoins : *+${coin}*`
+🌹 DaymonCoins : *+${coin}*`
 conn.reply(m.chat,str, m, fake)
 global.db.data.users[m.sender].lastclaim = new Date * 1
 
