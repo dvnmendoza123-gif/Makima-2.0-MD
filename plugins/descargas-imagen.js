@@ -12,7 +12,7 @@ const image = await res.getRandom();
 const link = image;
 const messages = [['Imagen 1', dev, await res.getRandom(),
 [[]], [[]], [[]], [[]]], ['Imagen 2', dev, await res.getRandom(), [[]], [[]], [[]], [[]]], ['Imagen 2', dev, await res.getRandom(), [[]], [[]], [[]], [[]]], ['Imagen 4', dev, await res.getRandom(), [[]], [[]], [[]], [[]]]]
-await conn.sendCarousel(m.chat, `🌹 Resultados de: ${text}`, 'MAKIMA - BOT - MD', null, messages, m);
+await conn.sendCarousel(m.chat, `🌹 Resultados de: ${text}`, 'DAYMON TANJIRO BOT - MD', null, messages, m);
 };
 handler.help = ['imagen <query>'];
 handler.tags = ['buscador','descargas'];
