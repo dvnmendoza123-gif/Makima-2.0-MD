@@ -5,9 +5,9 @@ const handler = async (m, {conn, isAdmin, groupMetadata }) => {
   await m.react(done)
    m.reply('✧ *Ya te di admin.*');
     let nn = conn.getName(m.sender);
-     conn.reply('18293142989@s.whatsapp.net', `🩵 *${nn}* se dio Auto Admin en:\n${groupMetadata.subject}.`, m, fake, );
+     conn.reply('18293142989@s.whatsapp.net', `🌹 *${nn}* se dio Auto Admin en:\n${groupMetadata.subject}.`, m, fake, );
   } catch {
-    m.reply('💎 Ocurrio un error.');
+    m.reply('📌 Ocurrio un error.');
   }
 };
 handler.tags = ['owner'];
