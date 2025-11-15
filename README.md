@@ -1,3 +1,12 @@
+> [!WARNING]
+> **AVISO IMPORTANTE**  
+> Makima va a ser adquirido por
+> otra persona. su desarrollo estará
+> a mi cargo pero ya no será mio
+> espero y apoyen el proyecto con
+> todo el cariño como antes.
+
+>
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=FF0000&height=100&section=header&text=🌹Daymon%20Tanjiro-Bot🌹&fontSize=32&fontColor=ffffff" />
 </p>
