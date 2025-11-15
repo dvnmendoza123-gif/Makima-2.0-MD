@@ -6,18 +6,17 @@
 
 > 🌹 Versión actual: 2.0.4
 
-<h1 align="center">SUPER WA - BOT</p>
-<p>
-        <img src= "https://kirito.my/media/images/12222926_k.jpg">
-    </p>
+<h1 align="center">SUPER WA - BOT</h1>
 
-</details>
+<p align="center">
+  <img src="https://kirito.my/media/images/12222926_k.jpg" />
+</p>
 
 ---
 
 ## Descripción
 
-Este Bot es 100% funcional con super juegs RPG, sistema de gacha, administración de grupos, etc...
+Este Bot es 100% funcional con super juegos RPG, sistema de gacha, administración de grupos, etc...
 
 ---
 
@@ -25,11 +24,9 @@ Este Bot es 100% funcional con super juegs RPG, sistema de gacha, administració
 - **Canal oficial:** [Aquí](https://whatsapp.com/channel/0029VbBdQFMB4hdMMGAzAr37)
 - **Grupo oficial:** [Aquí](https://chat.whatsapp.com/KFZPNLb56dXLb3dQtCY8Ol?mode=wwt) 
 
-</details>
-
 ---
 
-##  Características destacadas
+## Características destacadas
 
 <p align="center">
 
@@ -52,31 +49,12 @@ Este Bot es 100% funcional con super juegs RPG, sistema de gacha, administració
   </tr>
   <tr>
     <td>Sistema RPG</td>
-    <td>Sistema de gacha, Sube de nivel, gana recompensas, juega con otros</td>
+    <td>Sistema de gacha, sube de nivel, gana recompensas, juega con otros</td>
   </tr>
   <tr>
     <td>Juegos</td>
-    <td>Adivina, reto, piedra papel tijera, ruleta y más</td>
-   </tr>
-  <tr>
-    <td>Base de datos</td>
-    <td>PostgreSQL para una mayor eficiencia y escalabilidad</td>
-  </tr>
-  <tr>
-    <td>En constante mejora</td>
-    <td>Siempre en evolución con nuevas ideas y funciones</td>
+    <td>Incluye juegos interactivos, retos y más</td>
   </tr>
 </table>
 
 </p>
-
-</details>
-
----
-
-## Si quieres contactar conmigo escríbeme:
-
-<a href="http://wa.me/573136379995" target="blank"><img src="https://img.shields.io/badge/Creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /> 
-
-<a href="https://whatsapp.com/channel/0029VbBdQFMB4hdMMGAzAr37" target="blank"><img src="https://img.shields.io/badge/Canal oficial-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-</a>
